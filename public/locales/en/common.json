@@ -30,7 +30,7 @@
     "filter_web3": "Web3",
     "filter_backend": "Backend",
     "filter_ai": "AI",
-    "featured_label": "Featured Build"
+    "empty": "No projects in this category yet."
   },
   "contact": {
     "kicker": "Contact",

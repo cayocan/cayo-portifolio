@@ -87,9 +87,6 @@ export default function ProjectCard({
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-3 mb-3">
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-1">
-              {t("projects.featured_label")}
-            </p>
             <h3 className="font-display text-xl font-semibold text-white">{title}</h3>
           </div>
           {Icon && (

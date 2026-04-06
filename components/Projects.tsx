@@ -139,7 +139,7 @@ export default function Projects() {
             animate={{ opacity: 1 }}
             className="py-20 text-center text-slate-500"
           >
-            No projects in this category yet.
+            {t("projects.empty")}
           </motion.div>
         )}
       </motion.div>

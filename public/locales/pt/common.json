@@ -30,7 +30,7 @@
     "filter_web3": "Web3",
     "filter_backend": "Backend",
     "filter_ai": "IA",
-    "featured_label": "Destaque"
+    "empty": "Nenhum projeto nesta categoria ainda."
   },
   "contact": {
     "kicker": "Contato",
