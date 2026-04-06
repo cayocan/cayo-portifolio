@@ -204,7 +204,7 @@ const PROJECTS: Array<{
   },
 ]
 
-const FILTERS: FilterKey[] = ["all", "games", "web3", "backend", "ai"]
+const FILTERS: FilterKey[] = ["all", "games", "web3", "ai"]
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
