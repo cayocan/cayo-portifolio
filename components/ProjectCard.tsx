@@ -96,7 +96,7 @@ export default function ProjectCard({
               alt={slides[idx].alt}
               width={640}
               height={360}
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
               unoptimized
             />
           </div>
