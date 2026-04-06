@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTranslation } from "react-i18next"
-import { Activity, Bot, Sparkles, Shield, type LucideIcon } from "lucide-react"
+import { Activity, Bot, Sparkles, Shield, Lock, Wallet, MessageSquare, type LucideIcon } from "lucide-react"
 import ProjectCard, { type ProjectCategory } from "./ProjectCard"
 import "@/lib/i18n"
 
@@ -58,6 +58,42 @@ const PROJECTS: Array<{
     icon: Shield,
     imageSrc: "/gifs/arbitrage-bot.gif",
     imageAlt: "Arbitrage Bot preview",
+  },
+  {
+    title: "VaultPass",
+    description:
+      "NFT Access Infrastructure — white-label platform for creating, distributing and monetizing Access Pass NFTs.",
+    tags: ["NFT", "Solidity", "Web3", "White-label"],
+    category: "web3",
+    icon: Lock,
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/vaultpass" }],
+  },
+  {
+    title: "Block Jar Tip",
+    description:
+      "Full-stack Web3 tipping dApp where merchants deploy their own smart contract, generate a unique QR/link, and receive on-chain tips with optional messages.",
+    tags: ["Solidity", "dApp", "Smart Contracts", "Web3"],
+    category: "web3",
+    icon: Wallet,
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/block-jar-tip" }],
+  },
+  {
+    title: "Greeting Wall",
+    description:
+      "Full-stack Web3 dApp where users connect their wallet, submit on-chain greetings, and read the latest messages from blockchain event history.",
+    tags: ["Solidity", "dApp", "Events", "Web3"],
+    category: "web3",
+    icon: MessageSquare,
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/greeting-wall" }],
+  },
+  {
+    title: "eth-agents",
+    description:
+      "Claude Code plugin bringing a team of 10 specialized AI agents to Ethereum development. Describe what you want in plain English — eth-agents figures out the rest.",
+    tags: ["Claude Code", "AI Agents", "Ethereum", "Plugin"],
+    category: "ai",
+    icon: Bot,
+    links: [{ label: "GitHub", href: "https://github.com/cayocan/eth-agents" }],
   },
 ]
 

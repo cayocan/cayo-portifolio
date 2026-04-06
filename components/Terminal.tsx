@@ -4,13 +4,13 @@ import { useEffect, useState } from "react"
 
 const LINES = [
   { text: "$ whoami", type: "command" },
-  { text: "Cayo Aguiar — Full Stack Dev", type: "output" },
+  { text: "Cayo Aguiar — Dev since 2017", type: "output" },
+  { text: "", type: "blank" },
+  { text: "$ certifications --list", type: "command" },
+  { text: "Unity Certified Developer ✓", type: "success" },
   { text: "", type: "blank" },
   { text: "$ stack --list", type: "command" },
   { text: "C# · .NET · Next.js · Unity · Web3", type: "output" },
-  { text: "", type: "blank" },
-  { text: "$ status", type: "command" },
-  { text: "Available for hire ✓", type: "success" },
 ] as const
 
 const DELAY_COMMAND = 700

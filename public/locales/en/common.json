@@ -6,13 +6,12 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Available for hire",
     "subtitle": "Full Stack Developer · C# & .NET · AI · Unity · Web3",
-    "bio": "I help companies build resilient platforms and intelligent experiences that deliver performance, scale, and clarity. Combining backend rigor, modern interfaces, and AI automation to accelerate results.",
+    "bio": "Developer since 2017 building resilient platforms and intelligent experiences. Unity Certified Developer with deep expertise in games, blockchain, and AI-driven products.",
     "cta_projects": "View Projects",
     "cta_contact": "Let's Talk",
-    "badge_available": "Available for full stack opportunities",
-    "badge_focus": "Focused on AI & automation products"
+    "badge_since": "Developer since 2017",
+    "badge_unity": "Unity Certified Developer"
   },
   "skills": {
     "kicker": "Skills",

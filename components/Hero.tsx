@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, Briefcase, Brain } from "lucide-react"
+import { ArrowUpRight, CalendarDays, Award } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import Terminal from "./Terminal"
 import "@/lib/i18n"
@@ -36,16 +36,6 @@ export default function Hero() {
         className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pt-28 pb-20 md:grid-cols-[1.2fr_0.8fr] md:items-center"
       >
         <motion.div className="space-y-8">
-          <motion.div variants={fadeUp}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-violet-primary/40 bg-violet-primary/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-violet-light">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-primary opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-primary" />
-              </span>
-              {t("hero.badge")}
-            </span>
-          </motion.div>
-
           <motion.div variants={fadeUp} className="space-y-4">
             <h1 className="font-display text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
               Cayo{" "}
@@ -82,12 +72,12 @@ export default function Hero() {
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 text-sm text-slate-500">
             <span className="inline-flex items-center gap-2">
-              <Briefcase className="h-4 w-4 text-violet-light" />
-              {t("hero.badge_available")}
+              <CalendarDays className="h-4 w-4 text-violet-light" />
+              {t("hero.badge_since")}
             </span>
             <span className="inline-flex items-center gap-2">
-              <Brain className="h-4 w-4 text-cyan-light" />
-              {t("hero.badge_focus")}
+              <Award className="h-4 w-4 text-cyan-light" />
+              {t("hero.badge_unity")}
             </span>
           </motion.div>
         </motion.div>
