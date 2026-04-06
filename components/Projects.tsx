@@ -78,7 +78,10 @@ const PROJECTS: Array<{
     tags: ["Claude Code", "AI Agents", "Ethereum", "Plugin"],
     category: "ai",
     icon: Bot,
-    links: [{ label: "GitHub", href: "https://github.com/cayocan/eth-agents" }],
+    links: [
+      { label: "GitHub", href: "https://github.com/cayocan/eth-agents" },
+      { label: "Site", href: "https://cayocan.github.io/eth-agents/" },
+    ],
   },
   {
     title: "UTC Não Pode Rir",
