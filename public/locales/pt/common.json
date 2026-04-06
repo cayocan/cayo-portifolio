@@ -29,7 +29,20 @@
     "filter_web3": "Web3",
     "filter_backend": "Backend",
     "filter_ai": "IA",
-    "empty": "Nenhum projeto nesta categoria ainda."
+    "empty": "Nenhum projeto nesta categoria ainda.",
+    "desc_apex_ai": "Plataforma de telemetria para sim racing com coaching em tempo real, análise de delta de voltas e indicadores preditivos de performance.",
+    "desc_fishdex": "Identificação de espécies marinhas com IA, fluxos de captura inteligente e enriquecimento taxonômico.",
+    "desc_vaultpass": "Infraestrutura de acesso via NFT — plataforma white-label para criar, distribuir e monetizar Access Pass NFTs.",
+    "desc_block_jar_tip": "dApp Web3 full-stack onde estabelecimentos implantam seu próprio smart contract, geram QR/link único e recebem gorjetas on-chain com mensagens opcionais.",
+    "desc_greeting_wall": "dApp Web3 full-stack onde usuários conectam a carteira, enviam saudações on-chain e leem as últimas mensagens do histórico de eventos da blockchain.",
+    "desc_eth_agents": "Plugin para Claude Code com uma equipe de 10 agentes de IA especializados em desenvolvimento Ethereum. Descreva o que quer em português — eth-agents resolve o resto.",
+    "desc_utc": "App oficial licenciado pelos Castro Brothers para Android. Jogadores tentam não rir de desafios absurdos. Gratuito com mais de 1K de downloads.",
+    "desc_crossbar": "Jogo da Global Game Jam 2018. Jogue como operador de telefonista conectando transmissões sob pressão antes de ser demitido. Feito com Unity.",
+    "desc_play_educa": "Plataforma educacional com mais de 100 atividades com personagens Disney licenciados para crianças, com IAP, Addressables e pipeline de conteúdo via REST API + CDN para Android, iOS e WebGL.",
+    "desc_truzzle": "Jogo de puzzle casual publicado na Steam. Leve a bola do início ao fim em 80+ níveis artesanais com dificuldade crescente — rotações, teletransportes e peças móveis incluídas.",
+    "desc_peg_adventure": "Puzzle na Steam — nova versão do clássico peg solitaire. Desbloqueie níveis com desempenho máximo em desafios de 3 estrelas e 43 conquistas Steam. Publicado pela Dreamlight Games.",
+    "desc_grave_knight": "RPG Visual Novel interativa na Steam com 70k+ palavras, combate por dados, 3 classes jogáveis e narrativa não-linear inspirada no SRD 5.1. Publicado pela Dreamlight Games.",
+    "desc_shieldmaiden": "Porting do jogo pixel art de ação e aventura da Dumativa para Xbox One e Xbox Series X|S. Atmosfera synthwave, 4 áreas, chefes épicos e saves na nuvem — publicado na Microsoft Store em 2023."
   },
   "contact": {
     "kicker": "Contato",

@@ -11,7 +11,7 @@ type FilterKey = "all" | ProjectCategory
 
 const PROJECTS: Array<{
   title: string
-  description: string
+  descKey: string
   tags: string[]
   category: ProjectCategory
   imageSrc?: string
@@ -21,8 +21,7 @@ const PROJECTS: Array<{
 }> = [
   {
     title: "Apex AI",
-    description:
-      "Sim racing telemetry platform delivering real-time coaching, lap delta insights, and predictive performance cues.",
+    descKey: "projects.desc_apex_ai",
     tags: ["C#", ".NET", "Realtime", "Telemetry"],
     category: "ai",
     icon: Activity,
@@ -31,8 +30,7 @@ const PROJECTS: Array<{
   },
   {
     title: "FishDex",
-    description:
-      "AI-powered marine species identification with smart capture workflows and taxonomy enrichment.",
+    descKey: "projects.desc_fishdex",
     tags: ["AI", "Vision", "Mobile", "Product"],
     category: "ai",
     icon: Sparkles,
@@ -41,8 +39,7 @@ const PROJECTS: Array<{
   },
   {
     title: "ShieldMaiden: Remix Edition",
-    description:
-      "Console porting of Dumativa's pixel art action-adventure to Xbox One and Xbox Series X|S. Synthwave atmosphere, 4 areas, boss fights, and cloud saves — published on the Microsoft Store in 2023.",
+    descKey: "projects.desc_shieldmaiden",
     tags: ["Unity", "Xbox", "Porting", "Console"],
     category: "games",
     icon: Gamepad2,
@@ -50,8 +47,7 @@ const PROJECTS: Array<{
   },
   {
     title: "VaultPass",
-    description:
-      "NFT Access Infrastructure — white-label platform for creating, distributing and monetizing Access Pass NFTs.",
+    descKey: "projects.desc_vaultpass",
     tags: ["NFT", "Solidity", "Web3", "White-label"],
     category: "web3",
     icon: Lock,
@@ -59,8 +55,7 @@ const PROJECTS: Array<{
   },
   {
     title: "Block Jar Tip",
-    description:
-      "Full-stack Web3 tipping dApp where merchants deploy their own smart contract, generate a unique QR/link, and receive on-chain tips with optional messages.",
+    descKey: "projects.desc_block_jar_tip",
     tags: ["Solidity", "dApp", "Smart Contracts", "Web3"],
     category: "web3",
     icon: Wallet,
@@ -68,8 +63,7 @@ const PROJECTS: Array<{
   },
   {
     title: "Greeting Wall",
-    description:
-      "Full-stack Web3 dApp where users connect their wallet, submit on-chain greetings, and read the latest messages from blockchain event history.",
+    descKey: "projects.desc_greeting_wall",
     tags: ["Solidity", "dApp", "Events", "Web3"],
     category: "web3",
     icon: MessageSquare,
@@ -77,8 +71,7 @@ const PROJECTS: Array<{
   },
   {
     title: "eth-agents",
-    description:
-      "Claude Code plugin bringing a team of 10 specialized AI agents to Ethereum development. Describe what you want in plain English — eth-agents figures out the rest.",
+    descKey: "projects.desc_eth_agents",
     tags: ["Claude Code", "AI Agents", "Ethereum", "Plugin"],
     category: "ai",
     icon: Bot,
@@ -86,8 +79,7 @@ const PROJECTS: Array<{
   },
   {
     title: "UTC Não Pode Rir",
-    description:
-      "Party game for Android where players try not to laugh at absurd dares and challenges. Free-to-play with 1K+ downloads.",
+    descKey: "projects.desc_utc",
     tags: ["Unity", "Android", "Party", "Mobile"],
     category: "games",
     icon: Smartphone,
@@ -95,8 +87,7 @@ const PROJECTS: Array<{
   },
   {
     title: "Crossbar GGJ18",
-    description:
-      "Global Game Jam 2018 entry. Play as a switchboard operator connecting incoming transmissions under pressure before you get fired. Made with Unity.",
+    descKey: "projects.desc_crossbar",
     tags: ["Unity", "Game Jam", "Android", "Windows"],
     category: "games",
     icon: Gamepad2,
@@ -104,16 +95,14 @@ const PROJECTS: Array<{
   },
   {
     title: "Play Educa Disney",
-    description:
-      "Educational platform with 100+ licensed Disney character activities for children, featuring IAP, Addressables, and a REST API + CDN content pipeline targeting Android, iOS, and WebGL.",
+    descKey: "projects.desc_play_educa",
     tags: ["Unity", "Educational", "Disney", "Mobile"],
     category: "games",
     icon: GraduationCap,
   },
   {
     title: "Truzzle",
-    description:
-      "Casual puzzle game published on Steam. Take the ball from start to finish through 80+ handmade levels with increasing difficulty — spins, teleports, and moving parts included.",
+    descKey: "projects.desc_truzzle",
     tags: ["Unity", "Puzzle", "Steam", "Casual"],
     category: "games",
     icon: CircleDot,
@@ -121,8 +110,7 @@ const PROJECTS: Array<{
   },
   {
     title: "Peg Adventure: Solo Noble",
-    description:
-      "Steam puzzle game — a fresh take on classic peg solitaire. Unlock levels with peak performance across 3-star challenges and 43 Steam achievements. Published by Dreamlight Games.",
+    descKey: "projects.desc_peg_adventure",
     tags: ["Unity", "Puzzle", "Steam", "Strategy"],
     category: "games",
     icon: Grid3X3,
@@ -130,8 +118,7 @@ const PROJECTS: Array<{
   },
   {
     title: "Grave Knight",
-    description:
-      "Interactive RPG Visual Novel on Steam with 70k+ words, dice-roll combat, 3 playable classes, and nonlinear storytelling inspired by the SRD 5.1 ruleset. Published by Dreamlight Games.",
+    descKey: "projects.desc_grave_knight",
     tags: ["Unity", "RPG", "Visual Novel", "Steam"],
     category: "games",
     icon: Swords,
@@ -205,7 +192,7 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25 }}
               >
-                <ProjectCard {...project} />
+                <ProjectCard {...project} description={t(project.descKey)} />
               </motion.div>
             ))}
           </AnimatePresence>

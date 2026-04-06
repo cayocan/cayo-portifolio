@@ -29,7 +29,20 @@
     "filter_web3": "Web3",
     "filter_backend": "Backend",
     "filter_ai": "AI",
-    "empty": "No projects in this category yet."
+    "empty": "No projects in this category yet.",
+    "desc_apex_ai": "Sim racing telemetry platform delivering real-time coaching, lap delta insights, and predictive performance cues.",
+    "desc_fishdex": "AI-powered marine species identification with smart capture workflows and taxonomy enrichment.",
+    "desc_vaultpass": "NFT Access Infrastructure — white-label platform for creating, distributing and monetizing Access Pass NFTs.",
+    "desc_block_jar_tip": "Full-stack Web3 tipping dApp where merchants deploy their own smart contract, generate a unique QR/link, and receive on-chain tips with optional messages.",
+    "desc_greeting_wall": "Full-stack Web3 dApp where users connect their wallet, submit on-chain greetings, and read the latest messages from blockchain event history.",
+    "desc_eth_agents": "Claude Code plugin bringing a team of 10 specialized AI agents to Ethereum development. Describe what you want in plain English — eth-agents figures out the rest.",
+    "desc_utc": "Official party game app licensed by the Castro Brothers for Android. Players try not to laugh at absurd dares and challenges. Free-to-play with 1K+ downloads.",
+    "desc_crossbar": "Global Game Jam 2018 entry. Play as a switchboard operator connecting incoming transmissions under pressure before you get fired. Made with Unity.",
+    "desc_play_educa": "Educational platform with 100+ licensed Disney character activities for children, featuring IAP, Addressables, and a REST API + CDN content pipeline targeting Android, iOS, and WebGL.",
+    "desc_truzzle": "Casual puzzle game published on Steam. Take the ball from start to finish through 80+ handmade levels with increasing difficulty — spins, teleports, and moving parts included.",
+    "desc_peg_adventure": "Steam puzzle game — a fresh take on classic peg solitaire. Unlock levels with peak performance across 3-star challenges and 43 Steam achievements. Published by Dreamlight Games.",
+    "desc_grave_knight": "Interactive RPG Visual Novel on Steam with 70k+ words, dice-roll combat, 3 playable classes, and nonlinear storytelling inspired by the SRD 5.1 ruleset. Published by Dreamlight Games.",
+    "desc_shieldmaiden": "Console porting of Dumativa's pixel art action-adventure to Xbox One and Xbox Series X|S. Synthwave atmosphere, 4 areas, boss fights, and cloud saves — published on the Microsoft Store in 2023."
   },
   "contact": {
     "kicker": "Contact",
