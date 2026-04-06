@@ -26,7 +26,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Dependency directories and lockfiles
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
