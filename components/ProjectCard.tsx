@@ -1,7 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowUpRight, type LucideIcon } from "lucide-react"
+import { ArrowUpRight, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import "@/lib/i18n"
 
@@ -19,8 +20,11 @@ export type ProjectCardProps = {
   category: ProjectCategory
   links?: ProjectLink[]
   icon?: LucideIcon
+  /** Single image (legacy) */
   imageSrc?: string
   imageAlt?: string
+  /** Multiple images → enables carousel */
+  images?: Array<{ src: string; alt?: string }>
 }
 
 const CATEGORY_STYLES: Record<ProjectCategory, { badge: string; glow: string; dot: string }> = {
@@ -55,9 +59,23 @@ export default function ProjectCard({
   icon: Icon,
   imageSrc,
   imageAlt,
+  images,
 }: ProjectCardProps) {
   const { t } = useTranslation()
   const styles = CATEGORY_STYLES[category]
+
+  // Normalise to a single array regardless of which prop was used
+  const slides: Array<{ src: string; alt: string }> = images
+    ? images.map((img) => ({ src: img.src, alt: img.alt ?? `${title} preview` }))
+    : imageSrc
+    ? [{ src: imageSrc, alt: imageAlt ?? `${title} preview` }]
+    : []
+
+  const [idx, setIdx] = useState(0)
+  const isCarousel = slides.length > 1
+
+  const prev = () => setIdx((i) => (i - 1 + slides.length) % slides.length)
+  const next = () => setIdx((i) => (i + 1) % slides.length)
 
   return (
     <motion.article
@@ -66,21 +84,58 @@ export default function ProjectCard({
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
       className={`group relative flex flex-col overflow-hidden rounded-2xl border border-white/8 bg-surface transition-shadow duration-300 hover:shadow-2xl ${styles.glow}`}
     >
-      {imageSrc && (
+      {slides.length > 0 && (
         <div className="relative overflow-hidden">
           <div className="aspect-video w-full bg-black/40">
             <img
-              src={imageSrc}
-              alt={imageAlt ?? `${title} preview`}
+              key={slides[idx].src}
+              src={slides[idx].src}
+              alt={slides[idx].alt}
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
+
+          {/* Category badge */}
           <span
             className={`absolute top-3 right-3 rounded-full border px-2.5 py-0.5 text-xs font-medium ${styles.badge}`}
           >
             {t(`projects.filter_${category}`)}
           </span>
+
+          {/* Carousel controls */}
+          {isCarousel && (
+            <>
+              <button
+                onClick={prev}
+                aria-label="Previous image"
+                className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 hover:bg-black/70"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+              <button
+                onClick={next}
+                aria-label="Next image"
+                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 hover:bg-black/70"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
+
+              {/* Dot indicators */}
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {slides.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setIdx(i)}
+                    aria-label={`Go to image ${i + 1}`}
+                    className={`h-1.5 rounded-full transition-all duration-200 ${
+                      i === idx ? "w-4 bg-white" : "w-1.5 bg-white/40 hover:bg-white/70"
+                    }`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
 

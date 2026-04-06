@@ -16,6 +16,7 @@ const PROJECTS: Array<{
   category: ProjectCategory
   imageSrc?: string
   imageAlt?: string
+  images?: Array<{ src: string; alt?: string }>
   icon: LucideIcon
   links?: Array<{ label: string; href: string }>
 }> = [
