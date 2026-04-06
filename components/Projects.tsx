@@ -140,10 +140,11 @@ export default function Projects() {
   const { t } = useTranslation()
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all")
 
-  const filtered =
+  const filtered = (
     activeFilter === "all"
       ? PROJECTS
       : PROJECTS.filter((p) => p.category === activeFilter)
+  ).slice().sort((a, b) => a.title.localeCompare(b.title))
 
   return (
     <section id="projects" className="relative py-24">
