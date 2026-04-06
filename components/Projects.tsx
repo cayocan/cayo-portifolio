@@ -28,6 +28,7 @@ const PROJECTS: Array<{
     icon: Activity,
     imageSrc: "/gifs/apex-ai.gif",
     imageAlt: "Apex AI preview",
+    links: [{ label: "GitHub", href: "https://github.com/cayocan/Apex-AI" }],
   },
   {
     title: "FishDex",
@@ -37,6 +38,7 @@ const PROJECTS: Array<{
     icon: Sparkles,
     imageSrc: "/gifs/fishdex.gif",
     imageAlt: "FishDex preview",
+    links: [{ label: "GitHub", href: "https://github.com/cayocan/fishdex" }],
   },
   {
     title: "ShieldMaiden: Remix Edition",
