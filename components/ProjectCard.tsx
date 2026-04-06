@@ -89,14 +89,15 @@ export default function ProjectCard({
     >
       {slides.length > 0 && (
         <div className="relative overflow-hidden">
-          <div className="aspect-video w-full bg-black/40 relative">
+          <div className="aspect-video w-full overflow-hidden bg-black/40">
             <Image
               key={slides[idx].src}
               src={slides[idx].src}
               alt={slides[idx].alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              width={640}
+              height={360}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              unoptimized
             />
           </div>
 
