@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTranslation } from "react-i18next"
-import { Activity, Bot, Sparkles, Shield, Lock, Wallet, MessageSquare, type LucideIcon } from "lucide-react"
+import { Activity, Bot, Sparkles, Shield, Lock, Wallet, MessageSquare, Gamepad2, Smartphone, GraduationCap, CircleDot, Grid3X3, Swords, type LucideIcon } from "lucide-react"
 import ProjectCard, { type ProjectCategory } from "./ProjectCard"
 import "@/lib/i18n"
 
@@ -94,6 +94,59 @@ const PROJECTS: Array<{
     category: "ai",
     icon: Bot,
     links: [{ label: "GitHub", href: "https://github.com/cayocan/eth-agents" }],
+  },
+  {
+    title: "UTC Não Pode Rir",
+    description:
+      "Party game for Android where players try not to laugh at absurd dares and challenges. Free-to-play with 1K+ downloads.",
+    tags: ["Unity", "Android", "Party", "Mobile"],
+    category: "games",
+    icon: Smartphone,
+    links: [{ label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.dreamlight.utcnaopoderir" }],
+  },
+  {
+    title: "Crossbar GGJ18",
+    description:
+      "Global Game Jam 2018 entry. Play as a switchboard operator connecting incoming transmissions under pressure before you get fired. Made with Unity.",
+    tags: ["Unity", "Game Jam", "Android", "Windows"],
+    category: "games",
+    icon: Gamepad2,
+    links: [{ label: "itch.io", href: "https://johnnyr-san.itch.io/crossbar-ggj18" }],
+  },
+  {
+    title: "Play Educa Disney",
+    description:
+      "Educational platform with 100+ licensed Disney character activities for children, featuring IAP, Addressables, and a REST API + CDN content pipeline targeting Android, iOS, and WebGL.",
+    tags: ["Unity", "Educational", "Disney", "Mobile"],
+    category: "games",
+    icon: GraduationCap,
+  },
+  {
+    title: "Truzzle",
+    description:
+      "Casual puzzle game published on Steam. Take the ball from start to finish through 80+ handmade levels with increasing difficulty — spins, teleports, and moving parts included.",
+    tags: ["Unity", "Puzzle", "Steam", "Casual"],
+    category: "games",
+    icon: CircleDot,
+    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1342730/Truzzle/" }],
+  },
+  {
+    title: "Peg Adventure: Solo Noble",
+    description:
+      "Steam puzzle game — a fresh take on classic peg solitaire. Unlock levels with peak performance across 3-star challenges and 43 Steam achievements. Published by Dreamlight Games.",
+    tags: ["Unity", "Puzzle", "Steam", "Strategy"],
+    category: "games",
+    icon: Grid3X3,
+    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1433830/Peg_Adventure__Solo_Noble/" }],
+  },
+  {
+    title: "Grave Knight",
+    description:
+      "Interactive RPG Visual Novel on Steam with 70k+ words, dice-roll combat, 3 playable classes, and nonlinear storytelling inspired by the SRD 5.1 ruleset. Published by Dreamlight Games.",
+    tags: ["Unity", "RPG", "Visual Novel", "Steam"],
+    category: "games",
+    icon: Swords,
+    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1484790/Grave_Knight/" }],
   },
 ]
 
