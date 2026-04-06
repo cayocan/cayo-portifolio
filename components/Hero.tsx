@@ -35,7 +35,7 @@ export default function Hero() {
         variants={stagger}
         className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 pt-28 pb-20 md:grid-cols-[1.2fr_0.8fr] md:items-center"
       >
-        <motion.div variants={stagger} className="space-y-8">
+        <motion.div className="space-y-8">
           <motion.div variants={fadeUp}>
             <span className="inline-flex items-center gap-2 rounded-full border border-violet-primary/40 bg-violet-primary/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-violet-light">
               <span className="relative flex h-2 w-2">
