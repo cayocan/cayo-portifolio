@@ -73,7 +73,7 @@ const projects = [
       "Sim racing telemetry platform delivering real-time coaching, lap delta insights, and predictive performance cues.",
     tags: ["C#", ".NET", "Realtime", "Telemetry"],
     icon: Activity,
-    accent: "blue" as const,
+    category: "backend" as const,
     imageSrc: "/gifs/apex-ai.gif",
     imageAlt: "Preview do projeto Apex AI",
   },
@@ -83,7 +83,7 @@ const projects = [
       "ML-driven crypto trading stack with automated data engineering pipelines, signal scoring, and risk controls.",
     tags: ["Python", "ML", "Data Engineering", "Automation"],
     icon: Bot,
-    accent: "lime" as const,
+    category: "ai" as const,
     imageSrc: "/gifs/argus-bot.gif",
     imageAlt: "Preview do projeto Argus Bot",
   },
@@ -93,7 +93,7 @@ const projects = [
       "AI-powered marine species identification with smart capture workflows and taxonomy enrichment.",
     tags: ["AI", "Vision", "Mobile", "Product"],
     icon: Sparkles,
-    accent: "blue" as const,
+    category: "ai" as const,
     imageSrc: "/gifs/fishdex.gif",
     imageAlt: "Preview do projeto FishDex",
   },
@@ -103,7 +103,7 @@ const projects = [
       "Spot/Future and Future/Future high-frequency arbitrage engine with latency-aware execution logic.",
     tags: ["HFT", "Risk", "Execution", "Strategy"],
     icon: Shield,
-    accent: "lime" as const,
+    category: "web3" as const,
     imageSrc: "/gifs/arbitrage-bot.gif",
     imageAlt: "Preview do projeto Arbitrage Bot",
   },
@@ -289,7 +289,7 @@ export default function HomePage() {
         <div className="grid gap-6">
           {projects.map((project, index) => (
             <motion.div key={project.title} variants={fadeUp} className="h-full">
-              <ProjectCard {...project} reverse={index % 2 === 1} />
+              <ProjectCard {...project} />
             </motion.div>
           ))}
         </div>
