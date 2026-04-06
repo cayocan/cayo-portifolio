@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Início",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "Disponível para contratação",
+    "subtitle": "Desenvolvedor Full Stack · C# & .NET · IA · Unity · Web3",
+    "bio": "Ajudo empresas a construir plataformas resilientes e experiências inteligentes que entregam performance, escala e clareza de uso. Combinando rigor de backend, interfaces modernas e automação com IA para acelerar resultados.",
+    "cta_projects": "Ver Projetos",
+    "cta_contact": "Vamos Conversar",
+    "badge_available": "Disponível para oportunidades full stack",
+    "badge_focus": "Foco em produtos com IA e automação"
+  },
+  "skills": {
+    "kicker": "Skills",
+    "title": "Competências-chave",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "ai_devops": "AI / DevOps",
+    "specialized": "Especialidades"
+  },
+  "projects": {
+    "kicker": "Trabalhos",
+    "title": "Projetos em destaque",
+    "filter_all": "Todos",
+    "filter_games": "Games",
+    "filter_web3": "Web3",
+    "filter_backend": "Backend",
+    "filter_ai": "IA",
+    "featured_label": "Destaque"
+  },
+  "contact": {
+    "kicker": "Contato",
+    "title": "Pronto para contribuir com sua equipe",
+    "label_name": "Nome",
+    "label_email": "Email",
+    "label_message": "Como posso ajudar",
+    "placeholder_name": "Seu nome",
+    "placeholder_email": "voce@email.com",
+    "placeholder_message": "Conte sobre a vaga, stack, desafios e objetivos.",
+    "send": "Enviar mensagem",
+    "direct_title": "Contato direto",
+    "direct_desc": "Disponível para conversar sobre oportunidades, projetos desafiadores e produtos com IA.",
+    "networks_title": "Redes"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}

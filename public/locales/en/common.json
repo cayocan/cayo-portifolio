@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for hire",
+    "subtitle": "Full Stack Developer · C# & .NET · AI · Unity · Web3",
+    "bio": "I help companies build resilient platforms and intelligent experiences that deliver performance, scale, and clarity. Combining backend rigor, modern interfaces, and AI automation to accelerate results.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Let's Talk",
+    "badge_available": "Available for full stack opportunities",
+    "badge_focus": "Focused on AI & automation products"
+  },
+  "skills": {
+    "kicker": "Skills",
+    "title": "Core Competencies",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "ai_devops": "AI / DevOps",
+    "specialized": "Specialized"
+  },
+  "projects": {
+    "kicker": "Work",
+    "title": "Featured Projects",
+    "filter_all": "All",
+    "filter_games": "Games",
+    "filter_web3": "Web3",
+    "filter_backend": "Backend",
+    "filter_ai": "AI",
+    "featured_label": "Featured Build"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Ready to contribute to your team",
+    "label_name": "Name",
+    "label_email": "Email",
+    "label_message": "How can I help",
+    "placeholder_name": "Your name",
+    "placeholder_email": "you@email.com",
+    "placeholder_message": "Tell me about the role, stack, challenges and goals.",
+    "send": "Send Message",
+    "direct_title": "Direct Contact",
+    "direct_desc": "Available to discuss opportunities, challenging projects and AI products.",
+    "networks_title": "Social"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
