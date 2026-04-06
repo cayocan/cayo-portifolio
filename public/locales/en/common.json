@@ -59,6 +59,12 @@
     "direct_desc": "Available to discuss opportunities, challenging projects and AI products.",
     "networks_title": "Social"
   },
+  "cv": {
+    "title": "Resume",
+    "subtitle": "Download my resume to learn more about my experience and skills.",
+    "download_en": "Download EN",
+    "download_pt": "Download PT-BR"
+  },
   "footer": {
     "rights": "All rights reserved."
   }

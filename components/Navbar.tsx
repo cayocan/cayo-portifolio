@@ -15,9 +15,16 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const saved = localStorage.getItem("i18nextLng")
-    if (saved && saved !== i18n.language) {
-      i18n.changeLanguage(saved)
+    const queryLang = new URLSearchParams(window.location.search).get("lang")
+    const supported = ["en", "pt"]
+    if (queryLang && supported.includes(queryLang)) {
+      i18n.changeLanguage(queryLang)
+      localStorage.setItem("i18nextLng", queryLang)
+    } else {
+      const saved = localStorage.getItem("i18nextLng")
+      if (saved && saved !== i18n.language) {
+        i18n.changeLanguage(saved)
+      }
     }
   }, [i18n])
 

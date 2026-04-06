@@ -59,6 +59,12 @@
     "direct_desc": "Disponível para conversar sobre oportunidades, projetos desafiadores e produtos com IA.",
     "networks_title": "Redes"
   },
+  "cv": {
+    "title": "Currículo",
+    "subtitle": "Baixe meu currículo para saber mais sobre minha experiência e habilidades.",
+    "download_en": "Download EN",
+    "download_pt": "Download PT-BR"
+  },
   "footer": {
     "rights": "Todos os direitos reservados."
   }
