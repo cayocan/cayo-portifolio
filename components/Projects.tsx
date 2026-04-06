@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTranslation } from "react-i18next"
-import { Activity, Bot, Sparkles, Shield, Lock, Wallet, MessageSquare, Gamepad2, Smartphone, GraduationCap, CircleDot, Grid3X3, Swords, type LucideIcon } from "lucide-react"
+import { Activity, Bot, Sparkles, Lock, Wallet, MessageSquare, Gamepad2, Smartphone, GraduationCap, CircleDot, Grid3X3, Swords, type LucideIcon } from "lucide-react"
 import ProjectCard, { type ProjectCategory } from "./ProjectCard"
 import "@/lib/i18n"
 
@@ -30,16 +30,6 @@ const PROJECTS: Array<{
     imageAlt: "Apex AI preview",
   },
   {
-    title: "Argus Bot",
-    description:
-      "ML-driven crypto trading stack with automated data engineering pipelines, signal scoring, and risk controls.",
-    tags: ["Python", "ML", "Data Engineering", "Automation"],
-    category: "web3",
-    icon: Bot,
-    imageSrc: "/gifs/argus-bot.gif",
-    imageAlt: "Argus Bot preview",
-  },
-  {
     title: "FishDex",
     description:
       "AI-powered marine species identification with smart capture workflows and taxonomy enrichment.",
@@ -50,14 +40,13 @@ const PROJECTS: Array<{
     imageAlt: "FishDex preview",
   },
   {
-    title: "Arbitrage Bot",
+    title: "ShieldMaiden: Remix Edition",
     description:
-      "Spot/Future and Future/Future high-frequency arbitrage engine with latency-aware execution logic.",
-    tags: ["HFT", "Risk", "Execution", "Strategy"],
-    category: "web3",
-    icon: Shield,
-    imageSrc: "/gifs/arbitrage-bot.gif",
-    imageAlt: "Arbitrage Bot preview",
+      "Console porting of Dumativa's pixel art action-adventure to Xbox One and Xbox Series X|S. Synthwave atmosphere, 4 areas, boss fights, and cloud saves — published on the Microsoft Store in 2023.",
+    tags: ["Unity", "Xbox", "Porting", "Console"],
+    category: "games",
+    icon: Gamepad2,
+    links: [{ label: "Xbox Store", href: "https://www.xbox.com/pt-BR/games/store/shieldmaiden-remix-edition/9mtgtz54t4p9" }],
   },
   {
     title: "VaultPass",
