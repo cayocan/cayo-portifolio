@@ -16,7 +16,7 @@ export default function Footer() {
         </span>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/cayoaguiar"
+            href="https://github.com/cayocan"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -24,7 +24,7 @@ export default function Footer() {
             <Github className="h-4 w-4" />
           </a>
           <a
-            href="https://www.linkedin.com/in/cayo-aguiar"
+            href="https://www.linkedin.com/in/cayoaguiar/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"

@@ -14,10 +14,9 @@ const PROJECTS: Array<{
   descKey: string
   tags: string[]
   category: ProjectCategory
-  imageSrc?: string
-  imageAlt?: string
   images?: Array<{ src: string; alt?: string }>
   icon: LucideIcon
+  wip?: boolean
   links?: Array<{ label: string; href: string }>
 }> = [
   {
@@ -26,35 +25,12 @@ const PROJECTS: Array<{
     tags: ["C#", ".NET", "Realtime", "Telemetry"],
     category: "ai",
     icon: Activity,
-    imageSrc: "/gifs/apex-ai.gif",
-    imageAlt: "Apex AI preview",
+    wip: true,
+    images: [
+      { src: "/images/project_images/ApexAi/img01.PNG" },
+      { src: "/images/project_images/ApexAi/img02.PNG" },
+    ],
     links: [{ label: "GitHub", href: "https://github.com/cayocan/Apex-AI" }],
-  },
-  {
-    title: "FishDex",
-    descKey: "projects.desc_fishdex",
-    tags: ["AI", "Vision", "Mobile", "Product"],
-    category: "ai",
-    icon: Sparkles,
-    imageSrc: "/gifs/fishdex.gif",
-    imageAlt: "FishDex preview",
-    links: [{ label: "GitHub", href: "https://github.com/cayocan/fishdex" }],
-  },
-  {
-    title: "ShieldMaiden: Remix Edition",
-    descKey: "projects.desc_shieldmaiden",
-    tags: ["Unity", "Xbox", "Porting", "Console"],
-    category: "games",
-    icon: Gamepad2,
-    links: [{ label: "Xbox Store", href: "https://www.xbox.com/pt-BR/games/store/shieldmaiden-remix-edition/9mtgtz54t4p9" }],
-  },
-  {
-    title: "VaultPass",
-    descKey: "projects.desc_vaultpass",
-    tags: ["NFT", "Solidity", "Web3", "White-label"],
-    category: "web3",
-    icon: Lock,
-    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/vaultpass" }],
   },
   {
     title: "Block Jar Tip",
@@ -62,34 +38,12 @@ const PROJECTS: Array<{
     tags: ["Solidity", "dApp", "Smart Contracts", "Web3"],
     category: "web3",
     icon: Wallet,
-    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/block-jar-tip" }],
-  },
-  {
-    title: "Greeting Wall",
-    descKey: "projects.desc_greeting_wall",
-    tags: ["Solidity", "dApp", "Events", "Web3"],
-    category: "web3",
-    icon: MessageSquare,
-    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/greeting-wall" }],
-  },
-  {
-    title: "eth-agents",
-    descKey: "projects.desc_eth_agents",
-    tags: ["Claude Code", "AI Agents", "Ethereum", "Plugin"],
-    category: "ai",
-    icon: Bot,
-    links: [
-      { label: "GitHub", href: "https://github.com/cayocan/eth-agents" },
-      { label: "Site", href: "https://cayocan.github.io/eth-agents/" },
+    images: [
+      { src: "/images/project_images/BlockTipJar/STEP_001.gif" },
+      { src: "/images/project_images/BlockTipJar/STEP_002.gif" },
+      { src: "/images/project_images/BlockTipJar/STEP_003.gif" },
     ],
-  },
-  {
-    title: "UTC Não Pode Rir",
-    descKey: "projects.desc_utc",
-    tags: ["Unity", "Android", "Party", "Mobile"],
-    category: "games",
-    icon: Smartphone,
-    links: [{ label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.dreamlight.utcnaopoderir" }],
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/block-jar-tip" }],
   },
   {
     title: "Crossbar GGJ18",
@@ -97,30 +51,39 @@ const PROJECTS: Array<{
     tags: ["Unity", "Game Jam", "Android", "Windows"],
     category: "games",
     icon: Gamepad2,
+    images: [
+      { src: "/images/project_images/Crossbar/img01.png" },
+      { src: "/images/project_images/Crossbar/img02.png" },
+      { src: "/images/project_images/Crossbar/img03.png" },
+    ],
     links: [{ label: "itch.io", href: "https://johnnyr-san.itch.io/crossbar-ggj18" }],
   },
   {
-    title: "Play Educa Disney",
-    descKey: "projects.desc_play_educa",
-    tags: ["Unity", "Educational", "Disney", "Mobile"],
-    category: "games",
-    icon: GraduationCap,
+    title: "eth-agents",
+    descKey: "projects.desc_eth_agents",
+    tags: ["Claude Code", "AI Agents", "Ethereum", "Plugin"],
+    category: "ai",
+    icon: Bot,
+    images: [
+      { src: "/images/project_images/eth-agents/img01.PNG" },
+      { src: "/images/project_images/eth-agents/img02.PNG" },
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/cayocan/eth-agents" },
+      { label: "Site", href: "https://cayocan.github.io/eth-agents/" },
+    ],
   },
   {
-    title: "Truzzle",
-    descKey: "projects.desc_truzzle",
-    tags: ["Unity", "Puzzle", "Steam", "Casual"],
-    category: "games",
-    icon: CircleDot,
-    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1342730/Truzzle/" }],
-  },
-  {
-    title: "Peg Adventure: Solo Noble",
-    descKey: "projects.desc_peg_adventure",
-    tags: ["Unity", "Puzzle", "Steam", "Strategy"],
-    category: "games",
-    icon: Grid3X3,
-    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1433830/Peg_Adventure__Solo_Noble/" }],
+    title: "FishDex",
+    descKey: "projects.desc_fishdex",
+    tags: ["AI", "Vision", "Mobile", "Product"],
+    category: "ai",
+    icon: Sparkles,
+    wip: true,
+    images: [
+      { src: "/images/project_images/FishDex/img01.PNG" },
+    ],
+    links: [{ label: "GitHub", href: "https://github.com/cayocan/fishdex" }],
   },
   {
     title: "Grave Knight",
@@ -128,7 +91,116 @@ const PROJECTS: Array<{
     tags: ["Unity", "RPG", "Visual Novel", "Steam"],
     category: "games",
     icon: Swords,
+    images: [
+      { src: "/images/project_images/GraveKnight/img01.png" },
+      { src: "/images/project_images/GraveKnight/Screen1Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen2PortVivi.png" },
+      { src: "/images/project_images/GraveKnight/Screen3Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen4Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen5Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen6Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen7Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen8Port.png" },
+      { src: "/images/project_images/GraveKnight/Screen9Port.png" },
+      { src: "/images/project_images/GraveKnight/Screens10Port.png" },
+    ],
     links: [{ label: "Steam", href: "https://store.steampowered.com/app/1484790/Grave_Knight/" }],
+  },
+  {
+    title: "Greeting Wall",
+    descKey: "projects.desc_greeting_wall",
+    tags: ["Solidity", "dApp", "Events", "Web3"],
+    category: "web3",
+    icon: MessageSquare,
+    images: [
+      { src: "/images/project_images/GreetingWall/demo.gif" },
+    ],
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/greeting-wall" }],
+  },
+  {
+    title: "Peg Adventure: Solo Noble",
+    descKey: "projects.desc_peg_adventure",
+    tags: ["Unity", "Puzzle", "Steam", "Strategy"],
+    category: "games",
+    icon: Grid3X3,
+    images: [
+      { src: "/images/project_images/PegAdventure/01img01.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071431_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071518_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071601_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071657_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071720_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071845_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027071917_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027072350_1.png" },
+      { src: "/images/project_images/PegAdventure/1433830_20201027072356_1.png" },
+    ],
+    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1433830/Peg_Adventure__Solo_Noble/" }],
+  },
+  {
+    title: "Play Educa Disney",
+    descKey: "projects.desc_play_educa",
+    tags: ["Unity", "Educational", "Disney", "Mobile"],
+    category: "games",
+    icon: GraduationCap,
+    images: [
+      { src: "/images/project_images/PlayEduca/img01.PNG" },
+      { src: "/images/project_images/PlayEduca/img02.PNG" },
+      { src: "/images/project_images/PlayEduca/img03.PNG" },
+      { src: "/images/project_images/PlayEduca/img04.PNG" },
+      { src: "/images/project_images/PlayEduca/img05.PNG" },
+      { src: "/images/project_images/PlayEduca/img06.PNG" },
+      { src: "/images/project_images/PlayEduca/img07.PNG" },
+    ],
+  },
+  {
+    title: "ShieldMaiden: Remix Edition",
+    descKey: "projects.desc_shieldmaiden",
+    tags: ["Unity", "Xbox", "Porting", "Console"],
+    category: "games",
+    icon: Gamepad2,
+    images: [
+      { src: "/images/project_images/Shieldmaiden/img01.png" },
+    ],
+    links: [{ label: "Xbox Store", href: "https://www.xbox.com/pt-BR/games/store/shieldmaiden-remix-edition/9mtgtz54t4p9" }],
+  },
+  {
+    title: "Truzzle",
+    descKey: "projects.desc_truzzle",
+    tags: ["Unity", "Puzzle", "Steam", "Casual"],
+    category: "games",
+    icon: CircleDot,
+    images: [
+      { src: "/images/project_images/Truzzle/cap1.png" },
+      { src: "/images/project_images/Truzzle/cap2.png" },
+    ],
+    links: [{ label: "Steam", href: "https://store.steampowered.com/app/1342730/Truzzle/" }],
+  },
+  {
+    title: "UTC Não Pode Rir",
+    descKey: "projects.desc_utc",
+    tags: ["Unity", "Android", "Party", "Mobile"],
+    category: "games",
+    icon: Smartphone,
+    images: [
+      { src: "/images/project_images/UTC/img01.png" },
+      { src: "/images/project_images/UTC/img02.png" },
+      { src: "/images/project_images/UTC/img03.png" },
+    ],
+    links: [{ label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.dreamlight.utcnaopoderir" }],
+  },
+  {
+    title: "VaultPass",
+    descKey: "projects.desc_vaultpass",
+    tags: ["NFT", "Solidity", "Web3", "White-label"],
+    category: "web3",
+    icon: Lock,
+    wip: true,
+    images: [
+      { src: "/images/project_images/VaultPass/img01.PNG" },
+      { src: "/images/project_images/VaultPass/img02.PNG" },
+    ],
+    links: [{ label: "GitHub", href: "https://github.com/web3-portfolio-projects/vaultpass" }],
   },
 ]
 
@@ -199,7 +271,7 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25 }}
               >
-                <ProjectCard {...project} description={t(project.descKey)} />
+                <ProjectCard {...project} description={t(project.descKey)} wip={project.wip} />
               </motion.div>
             ))}
           </AnimatePresence>

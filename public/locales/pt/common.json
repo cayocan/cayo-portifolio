@@ -30,6 +30,7 @@
     "filter_backend": "Backend",
     "filter_ai": "IA",
     "empty": "Nenhum projeto nesta categoria ainda.",
+    "wip": "Em Desenvolvimento",
     "desc_apex_ai": "Plataforma de telemetria para sim racing com coaching em tempo real, análise de delta de voltas e indicadores preditivos de performance.",
     "desc_fishdex": "Identificação de espécies marinhas com IA, fluxos de captura inteligente e enriquecimento taxonômico.",
     "desc_vaultpass": "Infraestrutura de acesso via NFT — plataforma white-label para criar, distribuir e monetizar Access Pass NFTs.",

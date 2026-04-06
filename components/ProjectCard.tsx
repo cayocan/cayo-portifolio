@@ -25,6 +25,7 @@ export type ProjectCardProps = {
   imageAlt?: string
   /** Multiple images → enables carousel */
   images?: Array<{ src: string; alt?: string }>
+  wip?: boolean
 }
 
 const CATEGORY_STYLES: Record<ProjectCategory, { badge: string; glow: string; dot: string }> = {
@@ -60,6 +61,7 @@ export default function ProjectCard({
   imageSrc,
   imageAlt,
   images,
+  wip,
 }: ProjectCardProps) {
   const { t } = useTranslation()
   const styles = CATEGORY_STYLES[category]
@@ -103,6 +105,13 @@ export default function ProjectCard({
             {t(`projects.filter_${category}`)}
           </span>
 
+          {/* WIP badge */}
+          {wip && (
+            <span className="absolute top-3 left-3 rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-300">
+              {t("projects.wip")}
+            </span>
+          )}
+
           {/* Carousel controls */}
           {isCarousel && (
             <>
@@ -143,6 +152,11 @@ export default function ProjectCard({
         <div className="flex items-start justify-between gap-3 mb-3">
           <div>
             <h3 className="font-display text-xl font-semibold text-white">{title}</h3>
+            {wip && slides.length === 0 && (
+              <span className="mt-1 inline-block rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-300">
+                {t("projects.wip")}
+              </span>
+            )}
           </div>
           {Icon && (
             <span className="flex-shrink-0 rounded-xl border border-white/10 bg-white/5 p-2 text-slate-300">

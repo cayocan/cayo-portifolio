@@ -13,12 +13,12 @@ const fadeUp = {
 const SOCIALS = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/cayo-aguiar",
+    href: "https://www.linkedin.com/in/cayoaguiar/",
     icon: Linkedin,
   },
   {
     label: "GitHub",
-    href: "https://github.com/cayoaguiar",
+    href: "https://github.com/cayocan",
     icon: Github,
   },
   {
