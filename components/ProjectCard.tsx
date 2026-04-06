@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowUpRight, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react"
 import { useTranslation } from "react-i18next"
@@ -88,13 +89,14 @@ export default function ProjectCard({
     >
       {slides.length > 0 && (
         <div className="relative overflow-hidden">
-          <div className="aspect-video w-full bg-black/40">
-            <img
+          <div className="aspect-video w-full bg-black/40 relative">
+            <Image
               key={slides[idx].src}
               src={slides[idx].src}
               alt={slides[idx].alt}
-              loading="lazy"
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 

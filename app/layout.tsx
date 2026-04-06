@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   title: "Cayo Aguiar | Portfolio",
   description:
     "Full Stack Developer — C# & .NET · AI · Unity · Web3. Building resilient platforms and intelligent experiences.",
+  icons: { icon: "/favicon.svg" },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
