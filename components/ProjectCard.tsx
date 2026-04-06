@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowUpRight, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react"
 import { useTranslation } from "react-i18next"
@@ -89,13 +90,14 @@ export default function ProjectCard({
       {slides.length > 0 && (
         <div className="relative overflow-hidden">
           <div className="aspect-video w-full overflow-hidden bg-black/40">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               key={slides[idx].src}
               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${slides[idx].src}`}
               alt={slides[idx].alt}
-              loading="lazy"
+              width={640}
+              height={360}
               className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+              unoptimized
             />
           </div>
 
