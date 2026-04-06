@@ -6,6 +6,24 @@
   color-scheme: dark;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-[#050608] text-slate-100 antialiased;
+  @apply bg-background text-slate-100 antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08060f;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b1f6e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
 }
