@@ -187,7 +187,6 @@ const PROJECTS: Array<{
       { src: "/images/UTC/img02.png" },
       { src: "/images/UTC/img03.png" },
     ],
-    links: [{ label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.dreamlight.utcnaopoderir" }],
   },
   {
     title: "VaultPass",
