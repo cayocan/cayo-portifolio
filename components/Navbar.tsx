@@ -20,13 +20,16 @@ export default function Navbar() {
     if (queryLang && supported.includes(queryLang)) {
       i18n.changeLanguage(queryLang)
       localStorage.setItem("i18nextLng", queryLang)
+      const url = new URL(window.location.href)
+      url.searchParams.delete("lang")
+      window.history.replaceState({}, "", url.toString())
     } else {
       const saved = localStorage.getItem("i18nextLng")
       if (saved && saved !== i18n.language) {
         i18n.changeLanguage(saved)
       }
     }
-  }, [i18n])
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
