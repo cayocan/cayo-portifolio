@@ -33,7 +33,7 @@ export default function CVDownload() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={`${base}/cv/Cayo_Aguiar_CV_GameDev_EN.pdf`}
+              href={`${base}/CVs/Cayo_Aguiar_CV_GameDev_EN.pdf`}
               download
               className="inline-flex items-center gap-2 rounded-full bg-violet-primary px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-violet-light hover:shadow-lg hover:shadow-violet-primary/30"
             >
@@ -41,7 +41,7 @@ export default function CVDownload() {
               {t("cv.download_en")}
             </a>
             <a
-              href={`${base}/cv/Cayo_Aguiar_CV_GameDev_PTBR.pdf`}
+              href={`${base}/CVs/Cayo_Aguiar_CV_GameDev_PTBR.pdf`}
               download
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-violet-primary/50 hover:bg-violet-primary/10"
             >
